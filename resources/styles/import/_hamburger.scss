@@ -1,0 +1,267 @@
+/* nav mobile*/
+.nav {
+    background-color: #F4F4F4;
+    
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+    height: 85vh;
+
+	position: fixed;
+    top: 15vh;
+    right: 50%;
+
+	padding: 10px 20px;
+	border-radius: 15px 15px 0px 0px;
+
+	transition: 0.4s ease-in-out;
+	transform: translateX(50%) scale(0);
+
+	opacity: 0;
+	z-index: 450;
+	&.expanded { 
+		transform: translateX(50%) scale(1);
+		opacity: 1;
+	}
+	.nav-toggle{
+		cursor: pointer;
+		width: 35px;
+		height: 45px;
+		padding: 7px;
+		svg{
+			width: 100%;
+    		height: 100%;
+		}
+	}
+	.fav-toggle{
+		position: absolute;
+		top: 10px;
+		right: 29px;
+		cursor: pointer;
+		width: 40px;
+		height: 45px;
+		padding: 7px;
+		svg{
+			width: 100%;
+    		height: 100%;
+			color: #098021;
+		}
+	}
+	#info-container{
+		overflow-y: auto;
+		border-radius: 15px;
+		margin-top: 15px;
+		height: 670px;
+	}
+
+	// commerce
+	.img-com{
+		display: flex;
+		max-width: 420px;
+		max-height: 315px;
+		margin: auto;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+	.titre-com{
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin: 10px 0px;
+		text-transform: uppercase;
+	}
+	.desc-com{
+		font-size: 1.1rem;
+		padding-left: 5px;
+		margin-bottom: 20px;
+		max-height: 260px;
+		overflow-y: auto;
+	}
+	.general-com{
+		display: flex;
+		flex-direction: column;
+		.adr-container, .horaire-container, .site-container, .tel-container, .mail-container{
+			display: flex;
+		}
+		.adr-com, .horaire-com, .site-com, .tel-com, .mail-com{
+			margin: 0px 0px 20px 25px;
+		}
+		svg{
+			width: 20px;
+			height: 30px;
+			color: #098021;
+		}
+
+	}
+	.adr-com, .horaire-com, .site-com, .tel-com, .mail-com{
+		margin-bottom: 5px;
+		padding: left 5px;
+		font-size: 1.2rem;
+	}
+	.horaire-com{
+		cursor: pointer;
+		user-select: none;
+		div{
+			display: none;
+		}
+		&:hover{
+			color: rgb(0, 89, 255);
+		}
+	}
+	.showHours{
+		div{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	// produit
+	.prod-container{
+		display: flex;
+		height: 160px;
+		width: 315px;
+		background-color: white;
+		margin: 0px 10px 10px;
+		border-radius: 15px;
+		overflow: hidden;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.img-prod{
+		width: 40%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 5px;
+		img{
+			border-radius: 10px;
+		}
+	}
+	.info-prod{
+		margin: 15px;
+		width: 60%;
+		.nom-prod{
+			font-size: 1.3rem;
+			font-weight: bold;
+		}
+		.desc-prod{
+			font-size: 0.85rem;
+			height: 60px;
+			overflow: auto;
+		}
+		.prix-prod{
+			font-weight: bold;
+			background-color: #098021;
+			color: white;
+			border-radius: 10px;
+			text-align: center;
+			padding: 2px 0px;
+			margin: 15px 0px;
+		}
+	}
+
+	.btn-avis{
+		&:hover{
+			text-decoration: none;
+			div{
+				background-color: #0c9728;
+			}
+		}
+		div{
+			width: 149px;
+			text-align: center;
+			padding: 10px;
+			border-radius: 10px;
+			background-color: #098021;
+			color: white;
+			margin-left: 15px;
+			font-size: 1.2rem;		
+		}
+	}
+	.avis-container{
+		display: flex;
+		flex-direction: column;
+		margin: 25px 15px 0px;
+		background-color:white;
+		border-radius: 15px;
+
+		.note-avis{
+			background-color:#098021;
+			border-radius: 10px;
+			color: white;
+			font-weight: bold;
+
+			margin: 10px;
+			width: fit-content;
+    		padding: 5px;
+		}
+	
+		.text-avis{
+			margin: 5px 10px 10px;
+			border-radius: 10px;
+
+			max-height: 100px;
+			overflow: auto;
+		}
+	}
+
+
+	.prod-toggle{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 250px;
+		height: 50px;
+		background-color: #098021;
+		border-radius: 15px;
+		margin: 15px auto 15px;
+
+		font-size: 1.37rem;
+		color: white;
+		transition: 0.4s ease-in-out;
+		cursor: pointer;
+
+		&:hover{
+			transform: scale(1.03);
+		}
+	}
+}
+
+
+@media screen and (min-width: 1280px) {
+
+	/* nav desktop*/
+	.nav {
+		width: 400px;
+		height: 100vh;
+
+		top: 0;
+		right: -400px;
+		border-radius: 15px 0px 0px 15px;
+				
+		transform: translateX(0%) scale(1);
+		&.expanded { 
+			transform: translateX(0%) scale(1);
+			right: 0;
+		}
+
+
+		#info-container{
+			height: 800px;
+		}
+
+
+		// produit
+		.prod-container{
+			width: 335px;
+		}
+		.img-prod{
+			img{
+				max-height: 95%;
+			}
+		}
+	}
+}
+

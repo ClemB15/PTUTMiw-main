@@ -1,0 +1,23 @@
+
+// impotation du reset css, variables et autre
+@import "map";
+@import 'variables';
+@import 'reset';
+@import 'fonts';
+@import "addons-map";
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.go-to{
+    color:white;
+}
+
+.go-to:hover {
+    cursor: pointer;
+    color: whitesmoke;
+}
+

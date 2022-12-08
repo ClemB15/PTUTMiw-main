@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "hartwellLight";
+  src: url(/fonts/Hartwell_Light.otf?883417e66ab51f82bfc301c9d3e2a37e) format("woff2");
+}
+
+@font-face {
+  font-family: "hartwellBol";
+  src: url(/fonts/Hartwell_Bold.otf?95faf89368c46c5460665e7cef30e1d8) format("woff2");
+}
+
+body,
+a {
+  color: grey;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.nav a:hover {
+  color: blue;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.nav > div {
+  display: flex;
+}
+
+.nav > div > a {
+  padding-right: 1rem;
+}
+

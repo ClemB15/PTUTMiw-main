@@ -1,0 +1,25 @@
+
+// impotation des variables et autre
+@import 'import/_fonts.scss';
+@import 'import/_variables.scss';
+body, a{
+    color: grey;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	border-bottom: 1px solid grey;
+	a:hover{
+		color: blue;
+		opacity: 0.8;
+		text-decoration: none;
+	}
+	>div{
+		display: flex;
+		>a{
+			padding-right: 1rem;	
+		}
+	}
+}

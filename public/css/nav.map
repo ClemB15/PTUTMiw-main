@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "nav.css",
+	"sources": [
+		"../../resources/styles/nav.scss",
+		"../../resources/styles/import/_fonts.scss",
+		"../../resources/styles/import/_variables.scss"
+	],
+	"sourcesContent": [
+		"\r\n// impotation des variables et autre\r\n@import 'import/_fonts.scss';\r\n@import 'import/_variables.scss';\r\nbody, a{\r\n    color: grey;\r\n}\r\n\r\n.nav{\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\tpadding: 2rem;\r\n\tborder-bottom: 1px solid grey;\r\n\ta:hover{\r\n\t\tcolor: blue;\r\n\t\topacity: 0.8;\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t>div{\r\n\t\tdisplay: flex;\r\n\t\t>a{\r\n\t\t\tpadding-right: 1rem;\t\r\n\t\t}\r\n\t}\r\n}\r\n",
+		"@font-face {\r\n    font-family: \"hartwellLight\";\r\n    src: url(\"../../fonts/Hartwell_Light.otf\") format(\"woff2\");\r\n}\r\n\r\n@font-face {\r\n    font-family: \"hartwellBol\";\r\n    src: url(\"../../fonts/Hartwell_Bold.otf\") format(\"woff2\");\r\n}",
+		""
+	],
+	"names": [],
+	"mappings": "ACAA,UAAU;EACN,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAE,qCAAqC,CAAC,eAAe;;;AAG9D,UAAU;EACN,WAAW,EAAE,aAAa;EAC1B,GAAG,EAAE,oCAAoC,CAAC,eAAe;;;;ADH7D,AAAA,IAAI,EAAE,CAAC,CAAA;EACH,KAAK,EAAE,IAAI;CACd;;;AAED,AAAA,IAAI,CAAA;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,cAAc;CAY7B;;;AAhBD,AAKC,IALG,CAKH,CAAC,AAAA,MAAM,CAAA;EACN,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,GAAG;EACZ,eAAe,EAAE,IAAI;CACrB;;;AATF,AAUC,IAVG,GAUF,GAAG,CAAA;EACH,OAAO,EAAE,IAAI;CAIb;;;AAfF,AAYE,IAZE,GAUF,GAAG,GAEF,CAAC,CAAA;EACD,aAAa,EAAE,IAAI;CACnB"
+}

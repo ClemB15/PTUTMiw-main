@@ -1,0 +1,100 @@
+@import 'import/_fonts.scss';
+@import 'import/_variables.scss';
+$background: #F4F4F4;
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background;
+}
+.card{
+    background-color: $background;
+}
+
+p{
+    margin: 0;
+}
+
+.logo{
+    img{
+        width: 100%;
+    }
+    margin: 0 auto;
+}
+
+.form-control{
+    max-width: 80%;
+    border: none;
+    border-bottom: solid 1px rgba(57, 57, 57, 0.5);
+    border-radius: 0;
+    background-color: $background;
+    text-align: center;
+}
+
+
+.card-body{
+    border: none;
+}
+
+.card{
+    border: none;
+}
+.forgot-container{
+    width: 100%;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.forgot{
+    font-size: 0.8em;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.input-control{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    margin: 0.4em;
+    border-radius: 25px;
+    width: 260px;
+    &:hover {
+        font-size: 1.08em;
+        transition-property: font-size;
+        transition-duration: 0.15s;
+    }
+}
+
+.buttons-google{
+    border: 1px solid #42CD42;
+    background-color: transparent;
+    color: #42CD42 ;
+    &:hover{
+        color: #42CD42;
+        background-color: transparent;
+        border: 1px solid #42CD42;
+    }
+}
+
+.button-login{
+    border: none;
+    background: #42cd42;
+    &:hover{
+        background-color: #32a032;
+
+    }
+}
+
+
+.col-md-6{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
